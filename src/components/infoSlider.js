@@ -3,12 +3,6 @@ import connect from "react-redux/es/connect/connect";
 import '../styles/infoSlider.css';
 import {setSlideTabIndex} from "../actions/layoutActions";
 
-import java from '../assets/java.jpg';
-import oracle from '../assets/oracle.jpg';
-import postgres from '../assets/postgres.png';
-import react from '../assets/react.png';
-import redux from '../assets/redux.png';
-
 const mapStateToProps = (state, ownProps) => {
     return {selectedSliderTabIndex: state.dm.selectedSliderTabIndex};
 };
@@ -94,7 +88,7 @@ class InfoSlider extends Component {
                             <p>
                             <q>React JS</q>
                             <span className="author">
-                            <img alt='image1' src={react}/>
+                            <img alt='image1' src={process.env.PUBLIC_URL + '/assets/react.png'}/>
                             3 years
                             </span>
                             </p>
@@ -103,7 +97,7 @@ class InfoSlider extends Component {
                             <p>
                                 <q>Redux JS</q>
                                 <span className="author">
-                                <img alt='image2' src={redux}/>
+                                <img alt='image2' src={process.env.PUBLIC_URL + '/assets/redux.png'}/>
                                 3 years
                                 </span>
                             </p>
@@ -112,7 +106,7 @@ class InfoSlider extends Component {
                             <p>
                                 <q>Java</q>
                                 <span className="author">
-                                <img alt='image3' src={java}/>
+                                <img alt='image3' src={process.env.PUBLIC_URL + '/assets/java.jpg'}/>
                                 4 years
                                 </span>
                             </p>
@@ -121,7 +115,7 @@ class InfoSlider extends Component {
                             <p>
                             <q>Oracle</q>
                             <span className="author">
-                                <img alt='image4' src={oracle}/>
+                                <img alt='image4' src={process.env.PUBLIC_URL + '/assets/oracle.jpg'}/>
                                 4 years
                             </span>
                             </p>
@@ -130,7 +124,7 @@ class InfoSlider extends Component {
                             <p>
                             <q>Postgres</q>
                             <span className="author">
-                                <img alt='image4' src={postgres}/>
+                                <img alt='image4' src={process.env.PUBLIC_URL + '/assets/postgres.png'}/>
                                 4 years
                             </span>
                             </p>
