@@ -11,7 +11,7 @@ let store = createStore();
 //     window.scrollTo(0, 0);
 // };
 
-window.document.body.style.backgroundImage = "url('/assets/background.jpg')";
+window.document.body.style.backgroundImage = "url('" + window.location.pathname + "assets/background.jpg')";
 window.document.body.style.backgroundRepeat = "no-repeat";
 window.document.body.style.backgroundPosition = "center";
 
