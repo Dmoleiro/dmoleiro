@@ -88,7 +88,7 @@ class InfoSlider extends Component {
                             <p>
                             <q>React JS</q>
                             <span className="author">
-                            <img alt='image1' src={process.env.PUBLIC_URL + '/assets/react.png'}/>
+                            <img alt='image1' src={window.location.href + '/assets/react.png'}/>
                             3 years
                             </span>
                             </p>
@@ -97,7 +97,7 @@ class InfoSlider extends Component {
                             <p>
                                 <q>Redux JS</q>
                                 <span className="author">
-                                <img alt='image2' src={process.env.PUBLIC_URL + '/assets/redux.png'}/>
+                                <img alt='image2' src={window.location.href + '/assets/redux.png'}/>
                                 3 years
                                 </span>
                             </p>
@@ -106,7 +106,7 @@ class InfoSlider extends Component {
                             <p>
                                 <q>Java</q>
                                 <span className="author">
-                                <img alt='image3' src={process.env.PUBLIC_URL + '/assets/java.jpg'}/>
+                                <img alt='image3' src={window.location.href + '/assets/java.jpg'}/>
                                 4 years
                                 </span>
                             </p>
@@ -115,7 +115,7 @@ class InfoSlider extends Component {
                             <p>
                             <q>Oracle</q>
                             <span className="author">
-                                <img alt='image4' src={process.env.PUBLIC_URL + '/assets/oracle.jpg'}/>
+                                <img alt='image4' src={window.location.href + '/assets/oracle.jpg'}/>
                                 4 years
                             </span>
                             </p>
@@ -124,7 +124,7 @@ class InfoSlider extends Component {
                             <p>
                             <q>Postgres</q>
                             <span className="author">
-                                <img alt='image4' src={process.env.PUBLIC_URL + '/assets/postgres.png'}/>
+                                <img alt='image4' src={window.location.href + '/assets/postgres.png'}/>
                                 4 years
                             </span>
                             </p>
