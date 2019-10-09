@@ -14,6 +14,8 @@ let store = createStore();
 window.document.body.style.backgroundImage = "url('" + window.location.pathname + "assets/background.jpg')";
 window.document.body.style.backgroundRepeat = "no-repeat";
 window.document.body.style.backgroundPosition = "center";
+window.document.body.style.backgroundAttachment = "fixed"
+
 
 ReactDOM.render(<Landing store={store}/>, document.getElementById('root'));
 

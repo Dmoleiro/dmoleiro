@@ -7,8 +7,18 @@ class WelcomeScreen extends Component {
             <div className="welcomeContainer">
                 <section className="intro">
                     <div className="content">
-                        <div className="title">You can create full screen sections without javascript.</div>
-                        <div className="content">The height is set to 90vh, that means 90% height.</div>
+                        <div className="sp-container">
+                        	<div className="sp-content">
+                        		<div className="sp-globe"></div>
+                        		<h2 className="frame-1">WELCOME</h2>
+                        		<h2 className="frame-2">TO DMOLEIRO</h2>
+                        		<h2 className="frame-5">
+                        			<span>CODE,</span>
+                        			<span>SLEEP,</span>
+                        			<span>REPEAT.</span>
+                        		</h2>
+                        	</div>
+                        </div>
                     </div>
                 </section>
             </div>

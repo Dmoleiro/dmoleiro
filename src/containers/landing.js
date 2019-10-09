@@ -9,7 +9,7 @@ import WelcomeScreen from "../components/welcomeScreen";
 class Landing extends Component {
   render(){
     return (
-        <div>
+        <div className="mainContainer">
             <WelcomeScreen/>
             <TitleBar/>
             <Introduction />
