@@ -7,6 +7,10 @@ import createStore from './createStore';
 
 let store = createStore();
 
+// window.onbeforeunload = function () {
+//     window.scrollTo(0, 0);
+// };
+
 ReactDOM.render(<Landing store={store}/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

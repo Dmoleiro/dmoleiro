@@ -3,6 +3,12 @@ import connect from "react-redux/es/connect/connect";
 import '../styles/infoSlider.css';
 import {setSlideTabIndex} from "../actions/layoutActions";
 
+import java from '../assets/java.jpg';
+import oracle from '../assets/oracle.jpg';
+import postgres from '../assets/postgres.png';
+import react from '../assets/react.png';
+import redux from '../assets/redux.png';
+
 const mapStateToProps = (state, ownProps) => {
     return {selectedSliderTabIndex: state.dm.selectedSliderTabIndex};
 };
@@ -11,85 +17,121 @@ class InfoSlider extends Component {
     constructor(props) {
         super(props);
 
+        this.state={};
+    }
+
+    componentDidMount() {
         let store = this.props.store;
         let storeData = store.getState();
 
-        this.state = {
+        this.setState({
+            ...this.state,
             selectedSliderTabIndex: storeData.dm.selectedSliderTabIndex
-        };
+        });
+
+        this._setAutoSlider();
     }
 
-    componentWillReceiveProps(nextProps) {
+    static getDerivedStateFromProps(nextProps, state) {
         let store = nextProps.store;
         let storeData = store.getState();
 
         if (nextProps && storeData) {
-            this.setState({
-                ...this.state,
-                selectedSliderTabIndex: storeData.dm.selectedSliderTabIndex
-            });
+            state.selectedSliderTabIndex = storeData.dm.selectedSliderTabIndex;
+            return state;
         }
+        return null;
     }
 
-    _selectSlider(index, store) {
+    _selectSlider(index, store, isUserCommand = false) {
+        // automatically disable auto slider when user interaction occurs
+
+        if (isUserCommand) {
+            this._disableAutoSlider();
+        }
+
         if (index !== undefined && store !== undefined) {
             store.dispatch(setSlideTabIndex(index));
         }
     }
+
+    _setAutoSlider() {
+        if (this.state.autoSlider === undefined) {
+            this.autoSlider = setInterval(() => {
+                let selectedSliderTabIndex = this.state.selectedSliderTabIndex;
+                if (selectedSliderTabIndex === 4) {
+                    selectedSliderTabIndex = 0;
+                } else {
+                    selectedSliderTabIndex++;
+                }
+                this._selectSlider(selectedSliderTabIndex, this.props.store);
+            }, 2000);
+        }
+    }
+
+    _disableAutoSlider() {
+        if (this.autoSlider !== undefined) {
+            clearInterval(this.autoSlider);
+            this.autoSlider = undefined;
+        }
+    }
+
     render() {
+        let store = this.props.store;
+        let storeData = store.getState();
+        let selectedSlider = storeData.dm.selectedSliderTabIndex;
         return (
-            <div>
-                <h1>Css Only Carousel</h1>
+            <div className="sliderContainer">
                 <div className="carrousel">
-                    <h2>Title</h2>
-                    <input type="radio" name="slides" id="radio-1" onClick={() => this._selectSlider(0, this.props.store)} defaultChecked/>
-                    <input type="radio" name="slides" id="radio-2" onClick={() => this._selectSlider(1, this.props.store)}/>
-                    <input type="radio" name="slides" id="radio-3" onClick={() => this._selectSlider(2, this.props.store)}/>
-                    <input type="radio" name="slides" id="radio-4" onClick={() => this._selectSlider(3, this.props.store)}/>
-                    <input type="radio" name="slides" id="radio-5" onClick={() => this._selectSlider(4, this.props.store)}/>
+                    <h2>Skills</h2>
+                    <input type="radio" name="slides" id="radio-1" onClick={() => this._selectSlider(0, this.props.store, true)} checked={selectedSlider === 0} readOnly={true}/>
+                    <input type="radio" name="slides" id="radio-2" onClick={() => this._selectSlider(1, this.props.store, true)} checked={selectedSlider === 1} readOnly={true}/>
+                    <input type="radio" name="slides" id="radio-3" onClick={() => this._selectSlider(2, this.props.store, true)} checked={selectedSlider === 2} readOnly={true}/>
+                    <input type="radio" name="slides" id="radio-4" onClick={() => this._selectSlider(3, this.props.store, true)} checked={selectedSlider === 3} readOnly={true}/>
+                    <input type="radio" name="slides" id="radio-5" onClick={() => this._selectSlider(4, this.props.store, true)} checked={selectedSlider === 4} readOnly={true}/>
                     <ul className="slides">
                         <li className="slide">
                             <p>
-                            <q>It was a pleasure to work with him</q>
+                            <q>React JS</q>
                             <span className="author">
-                            <img alt='image1' src="https://th.thgim.com/news/international/m1m01s/article26984481.ece/alternates/FREE_300/30TH-TOLKIEN"/>
-                            JR Tolkien
+                            <img alt='image1' src={react}/>
+                            3 years
                             </span>
                             </p>
                         </li>
                             <li className="slide">
                             <p>
-                                <q>He is a good friend of mine</q>
+                                <q>Redux JS</q>
                                 <span className="author">
-                                <img alt='image2' src="https://i.pinimg.com/736x/3f/c5/87/3fc587af121759209c53132a71c03c97--record-player-swing.jpg"/>
-                                Sinatra
+                                <img alt='image2' src={redux}/>
+                                3 years
                                 </span>
                             </p>
                         </li>
                         <li className="slide">
                             <p>
-                                <q>This is pretty cool</q>
+                                <q>Java</q>
                                 <span className="author">
-                                <img alt='image3' src="https://pbs.twimg.com/profile_images/1832861297/GordonShumway12.jpg"/>
-                                Alf
+                                <img alt='image3' src={java}/>
+                                4 years
                                 </span>
                             </p>
                         </li>
                         <li className="slide">
                             <p>
-                            <q>This is awesome. Only Css you say?</q>
+                            <q>Oracle</q>
                             <span className="author">
-                                <img alt='image4' src="http://www.claudiobernasconi.ch/wp-content/uploads/2014/03/github_octocat-300x300.jpg"/>
-                                The octocat
+                                <img alt='image4' src={oracle}/>
+                                4 years
                             </span>
                             </p>
                         </li>
                         <li className="slide">
                             <p>
-                            <q>This is awesome. Only Css you say?</q>
+                            <q>Postgres</q>
                             <span className="author">
-                                <img alt='image4' src="http://www.claudiobernasconi.ch/wp-content/uploads/2014/03/github_octocat-300x300.jpg"/>
-                                The octocat
+                                <img alt='image4' src={postgres}/>
+                                4 years
                             </span>
                             </p>
                         </li>

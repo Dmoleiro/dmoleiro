@@ -1,0 +1,23 @@
+.introductionContainer {
+    display: flex;
+    flex-direction: column;
+    background: #d4d4ceEE;
+    min-height: 100px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.introductionTitle {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 15px;
+}
+
+.introductionText {
+    font-size: 12px;
+    margin: 5px 10px;
+    color: #343434;
+}

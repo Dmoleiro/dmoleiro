@@ -1,0 +1,38 @@
+.titleBarContainer {
+    display: flex;
+    flex-direction: column;
+    background: #023246EE;
+    color: #ffffff;
+    min-height: 100px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+.titleBarName {
+    margin: 10px 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.titlePosititon {
+    margin: 5px 20px;
+    font-size: 14px;
+}
+
+.horizontalBreak {
+    width: 96%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.titleAddress, .titleContacts {
+    margin: 2px 20px;
+}
+
+.titleContacts {
+    margin-bottom: 10px;
+}
