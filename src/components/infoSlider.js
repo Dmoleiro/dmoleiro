@@ -88,7 +88,7 @@ class InfoSlider extends Component {
                             <p>
                             <q>React JS</q>
                             <span className="author">
-                            <img alt='image1' src={window.location.href + '/assets/react.png'}/>
+                            <img alt='image1' src={process.env.PUBLIC_URL + '/assets/react.png'}/>
                             3 years
                             </span>
                             </p>

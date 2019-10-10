@@ -19,9 +19,9 @@ class WorkHistory extends Component {
                                 Title
                             </div>
                             <div className="workHistoryItemDescription">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
                                     aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit
-                                    accusantium id aut architecto harum quidem dolorem in!</p>
+                                    accusantium id aut architecto harum quidem dolorem in!
                             </div>
                         </div>
                     </div>
@@ -37,9 +37,9 @@ class WorkHistory extends Component {
                                 Title
                             </div>
                             <div className="workHistoryItemDescription">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
                                     aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit
-                                    accusantium id aut architecto harum quidem dolorem in!</p>
+                                    accusantium id aut architecto harum quidem dolorem in!
                             </div>
                         </div>
                     </div>
@@ -55,9 +55,9 @@ class WorkHistory extends Component {
                                 Title
                             </div>
                             <div className="workHistoryItemDescription">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
                                     aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit
-                                    accusantium id aut architecto harum quidem dolorem in!</p>
+                                    accusantium id aut architecto harum quidem dolorem in!
                             </div>
 
                         </div>
@@ -74,9 +74,9 @@ class WorkHistory extends Component {
                                 Title
                             </div>
                             <div className="workHistoryItemDescription">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
                                     aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit
-                                    accusantium id aut architecto harum quidem dolorem in!</p>
+                                    accusantium id aut architecto harum quidem dolorem in!
                             </div>
                         </div>
                     </div>

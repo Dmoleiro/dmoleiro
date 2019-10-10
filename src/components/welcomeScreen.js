@@ -9,7 +9,6 @@ class WelcomeScreen extends Component {
                     <div className="content">
                         <div className="sp-container">
                         	<div className="sp-content">
-                        		<div className="sp-globe"></div>
                         		<h2 className="frame-1">WELCOME</h2>
                         		<h2 className="frame-2">TO DMOLEIRO</h2>
                         		<h2 className="frame-5">
