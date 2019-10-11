@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../styles/workHistory.css';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class WorkHistory extends Component {
     render() {
@@ -12,11 +13,11 @@ class WorkHistory extends Component {
 
                         </div>
                         <div className="workHistoryItemDate">
-                            20-08-2019
+                            02/18 - present
                         </div>
                         <div className="workHistoryItemContent ">
                             <div className="workHistoryItemTitle">
-                                Title
+                                Team Leader
                             </div>
                             <div className="workHistoryItemDescription">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
@@ -30,11 +31,11 @@ class WorkHistory extends Component {
 
                         </div>
                         <div className="workHistoryItemDate">
-                            20-08-2019
+                            02/17 - 07/18
                         </div>
                         <div className="workHistoryItemContent">
                             <div className="workHistoryItemTitle">
-                                Title
+                                Javascript Developer
                             </div>
                             <div className="workHistoryItemDescription">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
@@ -48,11 +49,11 @@ class WorkHistory extends Component {
 
                         </div>
                         <div className="workHistoryItemDate">
-                            20-08-2019
+                            02/13 - 02/17
                         </div>
                         <div className="workHistoryItemContent">
                             <div className="workHistoryItemTitle">
-                                Title
+                                Java Developer
                             </div>
                             <div className="workHistoryItemDescription">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
@@ -67,11 +68,11 @@ class WorkHistory extends Component {
 
                         </div>
                         <div className="workHistoryItemDate">
-                            20-08-2019
+                            09/08 - 05/12
                         </div>
                         <div className="workHistoryItemContent">
                             <div className="workHistoryItemTitle">
-                                Title
+                                Degree in Computer Engineering
                             </div>
                             <div className="workHistoryItemDescription">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut

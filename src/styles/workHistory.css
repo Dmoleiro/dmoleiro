@@ -46,7 +46,7 @@
 }
 
 .workHistoryItemTitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.4;
     text-transform: uppercase;
     font-weight: 600;
@@ -92,4 +92,21 @@
 }
 .workHistoryItemIcon i {
     font-size: 1em;
+}
+
+.workHistoryItem:nth-child(4n+1) .workHistoryItemDate, .workHistoryItem:nth-child(4n+1) .workHistoryItemIcon {
+    background-color: #FA991C;
+    color: #023246;
+}
+.workHistoryItem:nth-child(4n+2) .workHistoryItemDate, .workHistoryItem:nth-child(4n+2) .workHistoryItemIcon {
+    background-color: #1C768F;
+    color: #f6f6f6;
+}
+.workHistoryItem:nth-child(4n+3) .workHistoryItemDate, .workHistoryItem:nth-child(4n+3) .workHistoryItemIcon {
+    background-color: #032539;
+    color: #f6f6f6;
+}
+.workHistoryItem:nth-child(4n+4) .workHistoryItemDate, .workHistoryItem:nth-child(4n+4) .workHistoryItemIcon {
+    background-color: #FA5F1A;
+    color: #023246;
 }

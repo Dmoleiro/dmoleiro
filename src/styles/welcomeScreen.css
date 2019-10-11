@@ -46,6 +46,7 @@ h1.main, p.demos {
 	background: -moz-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
 	background: -ms-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
 	background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
+	overflow-x: hidden;
 }
 .sp-content {
 	/*position: absolute;*/
@@ -56,58 +57,38 @@ h1.main, p.demos {
 	z-index: 1000;
 }
 .sp-container h2 {
-	/*position: absolute;*/
+	position: absolute;
 	top: 50%;
 	line-height: 100px;
 	height: 90px;
 	margin-top: -50px;
 	font-size: 90px;
 	width: 100%;
+	max-width: 100vw;
 	text-align: center;
 	color: transparent;
-	-webkit-animation: blurFadeInOut 3s ease-in backwards;
-	-moz-animation: blurFadeInOut 3s ease-in backwards;
-	-ms-animation: blurFadeInOut 3s ease-in backwards;
 	animation: blurFadeInOut 3s ease-in backwards;
 }
 .sp-container h2.frame-1 {
-	-webkit-animation-delay: 0s;
-	-moz-animation-delay: 0s;
-	-ms-animation-delay: 0s;
 	animation-delay: 0s;
 }
 .sp-container h2.frame-2 {
-	-webkit-animation-delay: 3s;
-	-moz-animation-delay: 3s;
-	-ms-animation-delay: 3s;
 	animation-delay: 3s;
 }
 .sp-container h2.frame-5 {
-	-webkit-animation: none;
-	-moz-animation: none;
-	-ms-animation: none;
 	animation: none;
 	color: transparent;
 	text-shadow: 0px 0px 1px #fff;
 }
 .sp-container h2.frame-5 span {
-	-webkit-animation: blurFadeIn 3s ease-in 6s backwards;
-	-moz-animation: blurFadeIn 1s ease-in 6s backwards;
-	-ms-animation: blurFadeIn 3s ease-in 6s backwards;
 	animation: blurFadeIn 3s ease-in 6s backwards;
 	color: transparent;
 	text-shadow: 0px 0px 1px #fff;
 }
 .sp-container h2.frame-5 span:nth-child(2) {
-	-webkit-animation-delay: 7s;
-	-moz-animation-delay: 7s;
-	-ms-animation-delay: 7s;
 	animation-delay: 7s;
 }
 .sp-container h2.frame-5 span:nth-child(3) {
-	-webkit-animation-delay: 8s;
-	-moz-animation-delay: 8s;
-	-ms-animation-delay: 8s;
 	animation-delay: 8s;
 }
 
