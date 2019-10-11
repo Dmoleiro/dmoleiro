@@ -86,46 +86,31 @@ class InfoSlider extends Component {
                     <ul className="slides">
                         <li className="slide">
                             <p>
-                            <q>React JS</q>
+                            <q>Frontend</q>
                             <span className="author">
                             <img alt='image1' src={process.env.PUBLIC_URL + '/assets/react.png'}/>
-                            3 years
-                            </span>
-                            </p>
-                        </li>
-                            <li className="slide">
-                            <p>
-                                <q>Redux JS</q>
-                                <span className="author">
-                                <img alt='image2' src={process.env.PUBLIC_URL + '/assets/redux.png'}/>
-                                3 years
-                                </span>
-                            </p>
-                        </li>
-                        <li className="slide">
-                            <p>
-                                <q>Java</q>
-                                <span className="author">
-                                <img alt='image3' src={process.env.PUBLIC_URL + '/assets/java.jpg'}/>
-                                4 years
-                                </span>
-                            </p>
-                        </li>
-                        <li className="slide">
-                            <p>
-                            <q>Oracle</q>
-                            <span className="author">
-                                <img alt='image4' src={process.env.PUBLIC_URL + '/assets/oracle.jpg'}/>
-                                4 years
+                            <img alt='image2' src={process.env.PUBLIC_URL + '/assets/redux.png'}/>
+                            <img alt='image3' src={process.env.PUBLIC_URL + '/assets/es6.png'}/>
+                            <img alt='image4' src={process.env.PUBLIC_URL + '/assets/html5.png'}/>
+                            <img alt='image5' src={process.env.PUBLIC_URL + '/assets/css.png'}/>
+                            <img alt='image6' src={process.env.PUBLIC_URL + '/assets/pixi.png'}/>
                             </span>
                             </p>
                         </li>
                         <li className="slide">
                             <p>
-                            <q>Postgres</q>
+                                <q>Backend</q>
+                                <span className="author">
+                                <img alt='image7' src={process.env.PUBLIC_URL + '/assets/java.jpg'}/>
+                                </span>
+                            </p>
+                        </li>
+                        <li className="slide">
+                            <p>
+                            <q>Databases</q>
                             <span className="author">
-                                <img alt='image4' src={process.env.PUBLIC_URL + '/assets/postgres.png'}/>
-                                4 years
+                                <img alt='image8' src={process.env.PUBLIC_URL + '/assets/oracle.jpg'}/>
+                                <img alt='image9' src={process.env.PUBLIC_URL + '/assets/postgres.png'}/>
                             </span>
                             </p>
                         </li>
@@ -134,8 +119,6 @@ class InfoSlider extends Component {
                         <label htmlFor="radio-1" id="dotForRadio-1"></label>
                         <label htmlFor="radio-2" id="dotForRadio-2"></label>
                         <label htmlFor="radio-3" id="dotForRadio-3"></label>
-                        <label htmlFor="radio-4" id="dotForRadio-4"></label>
-                        <label htmlFor="radio-5" id="dotForRadio-5"></label>
                     </div>
                 </div>
             </div>
