@@ -1,10 +1,4 @@
-How to deploy to github pages...
+[![Build Status](https://travis-ci.com/Dmoleiro/dmoleiro.svg?branch=master)](https://travis-ci.com/Dmoleiro/dmoleiro)
 
 
-https://dmoleiro.github.io/dmoleiro/.
-```
-git subtree split --prefix build -b gh-pages
-copy output hash
-git push origin {hash}:gh-pages --force
-git branch -D gh-pages
-```
+TBC 
