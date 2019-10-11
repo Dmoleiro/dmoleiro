@@ -9,12 +9,12 @@ class WelcomeScreen extends Component {
                     <div className="content">
                         <div className="sp-container">
                         	<div className="sp-content">
-                        		<h2 className="frame-1">WELCOME</h2>
-                        		<h2 className="frame-2">TO DMOLEIRO</h2>
+                        		<h2 className="frame-1">ABCDE</h2>
+                        		<h2 className="frame-2">FGHI</h2>
                         		<h2 className="frame-5">
-                        			<span>CODE,</span>
-                        			<span>SLEEP,</span>
-                        			<span>REPEAT.</span>
+                        			<span>ABC,</span>
+                        			<span>DEF,</span>
+                        			<span>GHI.</span>
                         		</h2>
                         	</div>
                         </div>
