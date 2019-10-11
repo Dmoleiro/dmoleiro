@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import connect from "react-redux/es/connect/connect";
+import {connect} from "react-redux";
 import '../styles/infoSlider.css';
 import {setSlideTabIndex} from "../actions/layoutActions";
 
