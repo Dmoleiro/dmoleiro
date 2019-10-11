@@ -25,6 +25,7 @@
     margin: 20px auto;
     position: relative;
 }
+
 .workHistoryItem {
     margin-bottom: 20px;
     position: relative;
@@ -35,6 +36,32 @@
     width: 95vw;
     max-width: 1000px;
 }
+
+.workHistoryItem:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    transition-duration: 0.3s;
+    transition-property: transform opacity;
+}
+.workHistoryItem:hover {
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+}
+.workHistoryItem:hover:before {
+    opacity: 1;
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
 .workHistoryItem:nth-child(2n + 1) {
     flex-direction: row-reverse;
 }
