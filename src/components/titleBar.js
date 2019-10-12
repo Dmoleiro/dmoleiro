@@ -6,19 +6,20 @@ class TitleBar extends Component {
         return (
             <div className="titleBarContainer">
                 <div className="titleBarName">
-                    E Pluribus Unum
+                    Daniel Ferreira
                 </div>
                 <div className="titlePosititon">
                     {/*Javascript developer / Team Leader*/}
-                    Ipsum Lorem / Lorem Ipsum
+                    Javascript developer
                 </div>
                 <hr className="horizontalBreak"/>
                 <div className="titleAddress">
-                    Street no 5, jdssddsds oeodkdkd R/C-E kdsjds ww ikjopi
+                    Lisbon
                 </div>
                 <div className="titleContacts">
-                    jdakjdajka@mail.com
+                    danielmoleiro@gmail.com
                 </div>
+                <img className="titlePhoto" alt='image20' src={process.env.PUBLIC_URL + '/assets/photo.png'}/>
             </div>
         );
     }

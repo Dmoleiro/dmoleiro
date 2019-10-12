@@ -6,11 +6,12 @@ class Introduction extends Component {
         return (
             <div className="introductionContainer">
                 <div className="introductionTitle">
-                    title
+                    Introduction
                 </div>
                 <div className="introductionText">
-                    text text texttext text texttext text texttext text texttext text texttext text texttext text texttext text texttext text text
-                    text text texttext text texttext text texttext text texttext text texttext text texttext text texttext text texttext text text
+                    I am a technology enthusiast working in software development for over 6 years, who enjoys learning new stuff and solve problems. I am constantly trying to increase my knowleadge base and improving my work processes. 
+                    I am also a DIY fan and am always seeking things that I can buid or fix myself to improve mine and other lifes.
+
                 </div>
 
             </div>

@@ -1,0 +1,227 @@
+.skillBarsContainer {
+  display: flex;
+    /* background: #f6f6f6EE; */
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 12px;
+    color: #444;
+    max-width: 1000px;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.skills {
+  width: 100%;
+  position: relative;
+  float: left;
+  /* padding: 30px 0; */
+  padding-right: 30px;
+}
+.skills ul {
+  list-style: none;
+  /* padding-top: 30px; */
+}
+.skills ul > li {
+  margin-bottom: 50px;
+  background: #dedede;
+  height: 6px;
+}
+.skills ul > li em {
+  font-size: 18px;
+  position: relative;
+  top: -30px;
+}
+.skills ul > li span {
+  height: inherit;
+  background-color: #94c245;
+  background: linear-gradient(90deg, #76b82a, #aecd60);
+  position: absolute;
+}
+.skills .html5 {
+  width: 80%;
+  animation: html5 1s ease-out;
+}
+.skills .css3 {
+  width: 80%;
+  animation: css3 1s ease-out;
+}
+.skills .js {
+  width: 90%;
+  animation: js 1s ease-out;
+}
+.skills .react {
+  width: 85%;
+  animation: react 1s ease-out;
+}
+.skills .electron {
+  width: 65%;
+  animation: electron 1s ease-out;
+}
+.skills .java {
+  width: 65%;
+  animation: java 1s ease-out;
+}
+.skills .spring {
+  width: 40%;
+  animation: spring 1s ease-out;
+}
+.skills .hibernate {
+  width: 60%;
+  animation: hibernate 1s ease-out;
+}
+.skills .oracle {
+  width: 50%;
+  animation: oracle 1s ease-out;
+}
+.skills .postgres {
+  width: 40%;
+  animation: postgres 1s ease-out;
+}
+.skills .ansible {
+  width: 65%;
+  animation: ansible 1s ease-out;
+}
+.skills .vagrant {
+  width: 55%;
+  animation: vagrant 1s ease-out;
+}
+.skills .maven {
+  width: 50%;
+  animation: maven 1s ease-out;
+}
+.skills .nginx {
+  width: 75%;
+  animation: nginx 1s ease-out;
+}
+.skills .jenkins {
+  width: 70%;
+  animation: jenkins 1s ease-out;
+}
+
+@keyframes html5 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes css3 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes js {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes react {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes electron {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes java {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes spring {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@keyframes hibernate {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes oracle {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes postgres {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@keyframes ansible {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes vagrant {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@keyframes maven {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes nginx {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes jenkins {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}

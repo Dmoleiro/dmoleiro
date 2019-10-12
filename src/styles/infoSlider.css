@@ -1,19 +1,23 @@
 .sliderContainer {
+  max-width: 1000px;
+  margin: auto;
   font-family: Helvetica;
   font-weight: 400;
+  background: #f6f6f6EE;
+  border-radius: 6px;
 }
 
 /*Carousel*/
 .carrousel {
-  background: #f6f6f6EE;
+
   text-align: center;
   padding: 4em 0;
-  height: 7.5em;
+  /* height: 7.5em; */
   max-width: 1000px;
   margin: auto;
   position: relative;
   overflow: hidden;
-  border-radius: 6px;
+
 }
 .carrousel h2 {
   margin: 0;

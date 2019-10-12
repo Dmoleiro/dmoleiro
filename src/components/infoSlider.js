@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from "react-redux";
 import '../styles/infoSlider.css';
 import {setSlideTabIndex} from "../actions/layoutActions";
+import SkillBars from "../components/skillBars";
 
 const mapStateToProps = (state, ownProps) => {
     return {selectedSliderTabIndex: state.dm.selectedSliderTabIndex};
@@ -53,13 +54,13 @@ class InfoSlider extends Component {
         if (this.state.autoSlider === undefined) {
             this.autoSlider = setInterval(() => {
                 let selectedSliderTabIndex = this.state.selectedSliderTabIndex;
-                if (selectedSliderTabIndex === 4) {
+                if (selectedSliderTabIndex === 2) {
                     selectedSliderTabIndex = 0;
                 } else {
                     selectedSliderTabIndex++;
                 }
                 this._selectSlider(selectedSliderTabIndex, this.props.store);
-            }, 2000);
+            }, 3500);
         }
     }
 
@@ -77,7 +78,7 @@ class InfoSlider extends Component {
         return (
             <div className="sliderContainer">
                 <div className="carrousel">
-                    <h2>Skills</h2>
+                    <h2>Stack</h2>
                     <input type="radio" name="slides" id="radio-1" onClick={() => this._selectSlider(0, this.props.store, true)} checked={selectedSlider === 0} readOnly={true}/>
                     <input type="radio" name="slides" id="radio-2" onClick={() => this._selectSlider(1, this.props.store, true)} checked={selectedSlider === 1} readOnly={true}/>
                     <input type="radio" name="slides" id="radio-3" onClick={() => this._selectSlider(2, this.props.store, true)} checked={selectedSlider === 2} readOnly={true}/>
@@ -93,7 +94,7 @@ class InfoSlider extends Component {
                             <img alt='image3' src={process.env.PUBLIC_URL + '/assets/es6.png'}/>
                             <img alt='image4' src={process.env.PUBLIC_URL + '/assets/html5.png'}/>
                             <img alt='image5' src={process.env.PUBLIC_URL + '/assets/css.png'}/>
-                            <img alt='image6' src={process.env.PUBLIC_URL + '/assets/pixi.png'}/>
+                            <img alt='image6' src={process.env.PUBLIC_URL + '/assets/electron.png'}/>
                             </span>
                             </p>
                         </li>
@@ -101,16 +102,23 @@ class InfoSlider extends Component {
                             <p>
                                 <q>Backend</q>
                                 <span className="author">
-                                <img alt='image7' src={process.env.PUBLIC_URL + '/assets/java.jpg'}/>
+                                <img alt='image7' src={process.env.PUBLIC_URL + '/assets/java.png'}/>
+                                <img alt='image8' src={process.env.PUBLIC_URL + '/assets/spring.png'}/>
+                                <img alt='image9' src={process.env.PUBLIC_URL + '/assets/hibernate.png'}/>
+                                <img alt='image10' src={process.env.PUBLIC_URL + '/assets/oracle.jpg'}/>
+                                <img alt='image11' src={process.env.PUBLIC_URL + '/assets/postgres.png'}/>
                                 </span>
                             </p>
                         </li>
                         <li className="slide">
                             <p>
-                            <q>Databases</q>
+                            <q>Devops</q>
                             <span className="author">
-                                <img alt='image8' src={process.env.PUBLIC_URL + '/assets/oracle.jpg'}/>
-                                <img alt='image9' src={process.env.PUBLIC_URL + '/assets/postgres.png'}/>
+                                <img alt='image12' src={process.env.PUBLIC_URL + '/assets/ansible.png'}/>
+                                <img alt='image13' src={process.env.PUBLIC_URL + '/assets/vagrant.png'}/>
+                                <img alt='image14' src={process.env.PUBLIC_URL + '/assets/maven.png'}/>
+                                <img alt='image15' src={process.env.PUBLIC_URL + '/assets/nginx.png'}/>
+                                <img alt='image16' src={process.env.PUBLIC_URL + '/assets/jenkins.png'}/>
                             </span>
                             </p>
                         </li>
@@ -121,6 +129,7 @@ class InfoSlider extends Component {
                         <label htmlFor="radio-3" id="dotForRadio-3"></label>
                     </div>
                 </div>
+                <SkillBars store={this.props.store}/>
             </div>
         );
     }
