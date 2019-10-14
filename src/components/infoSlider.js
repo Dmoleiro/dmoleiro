@@ -76,7 +76,7 @@ class InfoSlider extends Component {
         let storeData = store.getState();
         let selectedSlider = storeData.dm.selectedSliderTabIndex;
         return (
-            <div className="sliderContainer">
+            <div className="sliderContainer" id="slider">
                 <div className="carrousel">
                     <h2>Stack</h2>
                     <input type="radio" name="slides" id="radio-1" onClick={() => this._selectSlider(0, this.props.store, true)} checked={selectedSlider === 0} readOnly={true}/>

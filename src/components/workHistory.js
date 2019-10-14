@@ -7,7 +7,7 @@ import { faUsers, faFutbol, faBriefcaseMedical, faGraduationCap } from '@fortawe
 class WorkHistory extends Component {
     render() {
         return (
-            <div className="workHistoryContainer">
+            <div className="workHistoryContainer" id="history">
                 <div className="workHistoryTitle">Work History</div>
                 <div className="workHistory">
                     <div className="workHistoryItem">

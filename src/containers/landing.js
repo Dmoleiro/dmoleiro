@@ -9,9 +9,14 @@ import DownloadCV from "../components/downloadCV";
 
 class Landing extends Component {
   componentDidMount() {
-    this.scrollWait = 1000;
+    this.scrollWait = 100;
     this.lastScrollFireTime = Date.now();
     window.addEventListener("scroll", this._showDownload.bind(this));
+    this.welcomeScreen = document.getElementById('welcomeScreen');
+    this.introduction = document.getElementById('introduction');
+    this.slider = document.getElementById('slider');
+    this.history = document.getElementById('history');
+    this.downloadBtn = document.getElementById('downloadBtn');
   }
 
   componentWillUnmount() {
@@ -20,15 +25,23 @@ class Landing extends Component {
 
   _showDownload() {
     if ((this.lastScrollFireTime + this.scrollWait - Date.now()) < 0) {
-      let titleBar = document.getElementById('title-bar');
-      if (titleBar !== null && titleBar !== undefined) {
-        let bounding = titleBar.getBoundingClientRect();
-        if (bounding.top >= 0 && bounding.left >= 0 &&
-          bounding.right <= window.innerWidth && bounding.bottom <= window.innerHeight) {
-        	console.log('In the viewport!');
-        } else {
-        	console.log('Not in the viewport... whomp whomp');
-        }
+      // if (this.welcomeScreen !== null && this.welcomeScreen !== undefined && this.downloadBtn !== null && this.downloadBtn !== undefined) {
+      //   let bounding = this.welcomeScreen.getBoundingClientRect();
+      //   if (bounding.top >= 0 && bounding.left >= 0 &&
+      //     bounding.right <= window.innerWidth && bounding.bottom <= window.innerHeight) {
+      //     this.downloadBtn.style.display = 'none';
+      //   } else {
+      //   	this.downloadBtn.style.display = 'block';
+      //   }
+      // }
+      if (window.scrollY >= window.innerHeight){
+        // this.downloadBtn.style.display = 'block';
+        this.downloadBtn.style.visibility = 'visible';
+        this.downloadBtn.style.opacity = '1';
+      } else {
+        // this.downloadBtn.style.display = 'none';
+        this.downloadBtn.style.visibility = 'hidden';
+        this.downloadBtn.style.opacity = '0';
       }
       this.lastScrollFireTime = Date.now();
     }
