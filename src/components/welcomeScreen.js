@@ -4,7 +4,7 @@ import '../styles/welcomeScreen.css';
 class WelcomeScreen extends Component {
     render() {
         return (
-            <div className="welcomeContainer">
+            <div className="welcomeContainer" id="welcomeScreen">
                 <section className="intro">
                     <div className="content">
                         <div className="sp-container">

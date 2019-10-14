@@ -4,7 +4,7 @@ import '../styles/titleBar.css';
 class TitleBar extends Component {
     render() {
         return (
-            <div className="titleBarContainer">
+            <div className="titleBarContainer" id="title-bar">
                 <div className="titleBarName">
                     Daniel Ferreira
                 </div>
