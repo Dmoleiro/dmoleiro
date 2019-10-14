@@ -1,0 +1,9 @@
+.triangle-bottomright {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 100px solid red;
+      border-left: 100px solid transparent;
+    }
