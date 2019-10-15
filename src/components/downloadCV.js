@@ -4,7 +4,7 @@ import '../styles/downloadCV.css';
 
 class DownloadCV extends Component {
   _downloadCV() {
-    window.location.href = '/assets/CV-DanielFerreira.pdf';
+    window.location.href = (process.env.PUBLIC_URL + '/assets/CV-DanielFerreira.pdf');
   }
   render() {
     return (
