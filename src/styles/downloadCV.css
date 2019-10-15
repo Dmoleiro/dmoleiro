@@ -14,11 +14,11 @@
     .triangleText {
       position: fixed;
       bottom: 5px;
-      right: 1px;
+      right: 3px;
       color: white;
       font-weight: bold;
       text-align: right;
       max-width: 70px;
-      font-size: 11px;
+      font-size: 10px;
       cursor: pointer;
     }

@@ -60,7 +60,7 @@ class InfoSlider extends Component {
                 } else {
                     selectedSliderTabIndex++;
                 }
-                this._selectSlider(selectedSliderTabIndex, this.props.store);
+                this._selectSlider(selectedSliderTabIndex, this.props.store, true);
             }, 3500);
         }
     }
@@ -76,10 +76,10 @@ class InfoSlider extends Component {
         let selectedSliderTabIndex = this.state.selectedSliderTabIndex;
         switch (direction) {
             case 'left':
-                selectedSliderTabIndex = selectedSliderTabIndex === 2 ? 0 : selectedSliderTabIndex++;
+                selectedSliderTabIndex = (selectedSliderTabIndex === 2 ? 0 : (++selectedSliderTabIndex));
                 break;
             case 'right':
-                selectedSliderTabIndex = selectedSliderTabIndex === 0 ? 2 : selectedSliderTabIndex--;
+                selectedSliderTabIndex = (selectedSliderTabIndex === 0 ? 2 : (--selectedSliderTabIndex));
                 break;
             default:
                 break;
