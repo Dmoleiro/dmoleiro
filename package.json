@@ -52,6 +52,7 @@
     "react-dom": "^16.10.2",
     "react-fontawesome": "^1.6.1",
     "react-redux": "^7.1.1",
+    "react-touch-events": "^2.1.0",
     "redux": "^4.0.4",
     "resolve": "1.12.0",
     "resolve-url-loader": "3.1.0",

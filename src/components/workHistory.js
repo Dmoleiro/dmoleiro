@@ -19,12 +19,13 @@ class WorkHistory extends Component {
                         </div>
                         <div className="workHistoryItemContent ">
                             <div className="workHistoryItemTitle">
-                                Team Leader @e.near
+                                Team Leader / Javascript Developer @e.near
                             </div>
                             <div className="workHistoryItemDescription">
                                 Manage team of 5 elements with 2 backend devs, 2 frontend devs and 1 qa, enforcing scrum, developing delivery plans and creating tech designs.
                                 Team Lead functions are carried out while still holding javascript developer functions.
                                 Deployment and load test in qa / production ready environments.
+                                Key technologies are Ansible, Docker, ReactJS and Redux.
                             </div>
                         </div>
                     </div>
@@ -40,7 +41,8 @@ class WorkHistory extends Component {
                                 Javascript Developer @e.near
                             </div>
                             <div className="workHistoryItemDescription">
-                                Develop Virtual Sports Betting interface integrated with virtual sports video streaming platform.
+                                Develop Virtual Sports Betting interface integrated with virtual sports video streaming platform to be used by operators on their gambling sites worldwide.
+                                Mostly using ReactJS and Redux.
                             </div>
                         </div>
                     </div>
@@ -56,7 +58,8 @@ class WorkHistory extends Component {
                                 Java Developer @Maxdata Software
                             </div>
                             <div className="workHistoryItemDescription">
-                                Develop and maintain software responsible to manage large scale project to manage the entire workflow of clinical labs across Portugal most important Hospitals and Clinics.
+                                Develop and maintain software in a large scale project responsible for managing the entire workflow of medical labs across Portugal most important Hospitals and Clinics.
+                                Mostly using Java, Spring and Hibernate and UI made with GWT.
                             </div>
 
                         </div>
