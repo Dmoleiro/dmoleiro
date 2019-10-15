@@ -1,0 +1,103 @@
+.welcomeContainer {
+    height: 100vh;
+    background: #212121;
+    overflow: hidden;
+}
+
+.welcomeInnerContainer {
+    margin: auto;
+    width: 415px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.blueText {
+    color: #82d1f3;
+}
+
+.pinkText {
+    color: #f07178;
+}
+
+.yellowText {
+    color: #f6c467;
+}
+
+.greenText {
+    color: #c3e88d;
+}
+
+.whiteText {
+    color: #ffffff;
+}
+
+.blueText, .pinkText, .yellowText, .greenText, .whiteText {
+    background: none;
+}
+
+p{
+    font-family: "Courier";
+    font-size: 14px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: write-emulation 200ms 0ms steps(20, end) forwards;
+}
+
+p:nth-child(1){
+    animation: write-emulation 300ms 300ms steps(20, end) forwards;
+}
+p:nth-child(2){
+    animation: write-emulation 300ms 600ms steps(20, end) forwards;
+}
+p:nth-child(3){
+    animation: write-emulation 300ms 900ms steps(20, end) forwards;
+}
+p:nth-child(4){
+    animation: write-emulation 300ms 1200ms steps(20, end) forwards;
+}
+p:nth-child(5){
+    animation: write-emulation 300ms 1500ms steps(20, end) forwards;
+}
+p:nth-child(6){
+    animation: write-emulation 300ms 1800ms steps(20, end) forwards;
+}
+p:nth-child(7){
+    animation: write-emulation 300ms 2100ms steps(20, end) forwards;
+}
+p:nth-child(8){
+    animation: write-emulation 300ms 2400ms steps(20, end) forwards;
+}
+p:nth-child(9){
+    animation: write-emulation  300ms 2700ms steps(20, end) forwards;
+}
+p:nth-child(10){
+    animation: write-emulation  300ms 3000ms steps(20, end) forwards;
+}
+p:nth-child(11){
+    animation: write-emulation  300ms 3300ms steps(20, end) forwards;
+}
+
+@keyframes write-emulation{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100%; }
+}
+/* blinking cursor */
+.cursor {
+    font-size: 14px;
+    color: transparent;
+    animation: blink-c 1s 3600ms  step-end infinite;
+}
+
+@keyframes blink-c {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+}

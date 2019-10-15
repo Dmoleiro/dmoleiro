@@ -4,7 +4,8 @@ import Introduction from '../components/introduction';
 import '../styles/landing.css';
 import TitleBar from "../components/titleBar";
 import WorkHistory from "../components/workHistory";
-import WelcomeScreen from "../components/welcomeScreen";
+// import WelcomeScreen from "../components/welcomeScreen";
+import WelcomeScreen2 from "../components/welcomeScreen2";
 import DownloadCV from "../components/downloadCV";
 
 class Landing extends Component {
@@ -50,7 +51,8 @@ class Landing extends Component {
   render(){
     return (
         <div className="mainContainer">
-            <WelcomeScreen/>
+            {/*<WelcomeScreen/>*/}
+            <WelcomeScreen2/>
             <TitleBar/>
             <Introduction />
             <InfoSlider store={this.props.store}/>
