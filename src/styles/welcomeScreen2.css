@@ -37,7 +37,7 @@
     background: none;
 }
 
-p{
+.codeLine{
     font-family: "Courier";
     font-size: 14px;
     margin: 10px 0 0 10px;
@@ -47,37 +47,37 @@ p{
     animation: write-emulation 200ms 0ms steps(20, end) forwards;
 }
 
-p:nth-child(1){
+.codeLine:nth-child(1){
     animation: write-emulation 300ms 300ms steps(20, end) forwards;
 }
-p:nth-child(2){
+.codeLine:nth-child(2){
     animation: write-emulation 300ms 600ms steps(20, end) forwards;
 }
-p:nth-child(3){
+.codeLine:nth-child(3){
     animation: write-emulation 300ms 900ms steps(20, end) forwards;
 }
-p:nth-child(4){
+.codeLine:nth-child(4){
     animation: write-emulation 300ms 1200ms steps(20, end) forwards;
 }
-p:nth-child(5){
+.codeLine:nth-child(5){
     animation: write-emulation 300ms 1500ms steps(20, end) forwards;
 }
-p:nth-child(6){
+.codeLine:nth-child(6){
     animation: write-emulation 300ms 1800ms steps(20, end) forwards;
 }
-p:nth-child(7){
+.codeLine:nth-child(7){
     animation: write-emulation 300ms 2100ms steps(20, end) forwards;
 }
-p:nth-child(8){
+.codeLine:nth-child(8){
     animation: write-emulation 300ms 2400ms steps(20, end) forwards;
 }
-p:nth-child(9){
+.codeLine:nth-child(9){
     animation: write-emulation  300ms 2700ms steps(20, end) forwards;
 }
-p:nth-child(10){
+.codeLine:nth-child(10){
     animation: write-emulation  300ms 3000ms steps(20, end) forwards;
 }
-p:nth-child(11){
+.codeLine:nth-child(11){
     animation: write-emulation  300ms 3300ms steps(20, end) forwards;
 }
 

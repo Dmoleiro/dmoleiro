@@ -60,7 +60,7 @@ class InfoSlider extends Component {
                 } else {
                     selectedSliderTabIndex++;
                 }
-                this._selectSlider(selectedSliderTabIndex, this.props.store, true);
+                this._selectSlider(selectedSliderTabIndex, this.props.store, false);
             }, 3500);
         }
     }
