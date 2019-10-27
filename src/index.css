@@ -10,6 +10,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 code {

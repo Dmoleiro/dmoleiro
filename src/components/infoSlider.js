@@ -95,7 +95,7 @@ class InfoSlider extends Component {
             <ReactTouchEvents onSwipe={this._swipeSlider.bind(this)}>
                 <div className="sliderContainer" id="slider">
                     <div className="carrousel">
-                        <h2>Stack</h2>
+                        <div className="sliderTitle">Stack</div>
                         <input type="radio" name="slides" id="radio-1" onClick={() => this._selectSlider(0, this.props.store, true)} checked={selectedSlider === 0} readOnly={true}/>
                         <input type="radio" name="slides" id="radio-2" onClick={() => this._selectSlider(1, this.props.store, true)} checked={selectedSlider === 1} readOnly={true}/>
                         <input type="radio" name="slides" id="radio-3" onClick={() => this._selectSlider(2, this.props.store, true)} checked={selectedSlider === 2} readOnly={true}/>

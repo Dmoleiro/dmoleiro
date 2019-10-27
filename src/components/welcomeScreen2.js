@@ -2,6 +2,15 @@ import React, {Component} from 'react';
 import '../styles/welcomeScreen2.css';
 
 class WelcomeScreen2 extends Component {
+    componentDidMount() {
+        setTimeout(() => {
+            let doc = window.document;
+            if (doc !== null && doc !== undefined) {
+                doc.body.style.overflowY = 'auto'
+            }
+        }, 3600);
+    }
+
     render() {
         return (
             <div className='welcomeContainer'>
