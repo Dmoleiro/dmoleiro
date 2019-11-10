@@ -16,7 +16,7 @@ class Projects extends Component {
                                 <img className="tile" alt='dsantos' src={process.env.PUBLIC_URL + '/assets/projects/dsantos.png'}/>
                             </div>
                             <div className="back">
-                                <div className="button" onClick={() => window.open('http://www.dmoleiro.com/danielasantos')}>
+                                <div className="button" onClick={() => window.open('http://www.danielasantos.work')}>
                                     <span>Visit site</span>
                                     <svg>
                                         <polyline className="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
