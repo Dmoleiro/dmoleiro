@@ -22,10 +22,14 @@ class WorkHistory extends Component {
                                 Team Leader / Javascript Developer @e.near
                             </div>
                             <div className="workHistoryItemDescription">
-                                Manage team of 5 elements with 2 backend devs, 2 frontend devs and 1 qa, enforcing scrum, developing delivery plans and creating tech designs.
+                                Managed team of 5 elements until November 2019 with 2 backend devs, 2 frontend devs and 1 qa, enforcing scrum, developing delivery plans and creating tech designs.
                                 Team Lead functions are carried out while still holding javascript developer functions.
                                 Deployment and load test in qa / production ready environments.
                                 Key technologies are Ansible, Docker, ReactJS and Redux.
+                            </div>
+                            <br></br>
+                            <div className="workHistoryItemDescription">
+                                Currently working since early 2020 on a new project aiming at developing and maintaning a sports betting modular website with the above technologies as well.
                             </div>
                         </div>
                     </div>
