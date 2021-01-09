@@ -44,7 +44,61 @@
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background-color: red;
   margin-top: 20px;
   margin-left: -15px;
 }
+
+.titlePhoto:hover ~ .titlePhotoHoverText {
+    animation: none;
+    visibility: hidden;
+}
+
+.titlePhoto:hover ~ .titlePhotoPopup {
+    visibility: visible;
+}
+
+.titlePhotoHoverText {
+    position: absolute;
+    color: white;
+    transform: rotate(-45deg);
+    right: 70px;
+    top: 20px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: bold;
+    animation: flash infinite 2s ease-in-out;
+    user-select: none;
+}
+
+.titlePhotoPopup {
+    position: absolute;
+    min-width: 190px;
+    right: 0;
+    bottom: 5px;
+    height: 50px;
+    visibility: hidden;
+}
+
+.titlePhotoPopup:hover {
+    visibility: visible;
+}
+
+.titlePhotoPopup:hover ~ .titlePhotoHoverText {
+    animation: none;
+    visibility: hidden;
+}
+
+.titleIcon {
+    max-width: 30px;
+    max-height: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+@keyframes flash {
+    from {
+        color: white;
+    }
+    to {
+        color: transparent;
+    }
+  }
