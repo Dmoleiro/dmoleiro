@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/dmoleiro/static/css/main.48c12497.chunk.css",
+    "main.js": "/dmoleiro/static/js/main.1ff40e8d.chunk.js",
+    "main.js.map": "/dmoleiro/static/js/main.1ff40e8d.chunk.js.map",
+    "runtime-main.js": "/dmoleiro/static/js/runtime-main.f3ed70a1.js",
+    "runtime-main.js.map": "/dmoleiro/static/js/runtime-main.f3ed70a1.js.map",
+    "static/js/2.d5c0409e.chunk.js": "/dmoleiro/static/js/2.d5c0409e.chunk.js",
+    "static/js/2.d5c0409e.chunk.js.map": "/dmoleiro/static/js/2.d5c0409e.chunk.js.map",
+    "index.html": "/dmoleiro/index.html",
+    "precache-manifest.7957db1c28d7c7fc3570ecdc20337e2d.js": "/dmoleiro/precache-manifest.7957db1c28d7c7fc3570ecdc20337e2d.js",
+    "service-worker.js": "/dmoleiro/service-worker.js",
+    "static/css/main.48c12497.chunk.css.map": "/dmoleiro/static/css/main.48c12497.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f3ed70a1.js",
+    "static/js/2.d5c0409e.chunk.js",
+    "static/css/main.48c12497.chunk.css",
+    "static/js/main.1ff40e8d.chunk.js"
+  ]
+}
