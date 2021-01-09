@@ -20,6 +20,15 @@ class TitleBar extends Component {
                     danielmoleiro@gmail.com
                 </div>
                 <img className="titlePhoto" alt='image20' src={process.env.PUBLIC_URL + '/assets/photo.png'}/>
+                <div className="titlePhotoPopup">
+                    <a href="https://github.com/Dmoleiro" target="_blank" rel="noopener noreferrer">
+                        <img className="titleIcon" alt='github' src={process.env.PUBLIC_URL + '/assets/github.png'}/>
+                    </a>
+                    <a href="https://linkedin.com/in/daniel-m-ferreira" target="_blank" rel="noopener noreferrer">
+                        <img className="titleIcon" alt='linkedin' src={process.env.PUBLIC_URL + '/assets/linkedin.png'}/>
+                    </a>  
+                </div>
+                <div className="titlePhotoHoverText">hover me</div>
             </div>
         );
     }
