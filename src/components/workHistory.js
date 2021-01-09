@@ -29,7 +29,7 @@ class WorkHistory extends Component {
                             </div>
                             <br></br>
                             <div className="workHistoryItemDescription">
-                                Currently working since early 2020 on a new project aiming at developing and maintaning a sports betting modular website with the above technologies as well.
+                                Currently working since early 2020 on a new project aiming at developing and maintaning a sports betting modular website with the above technologies as well as more test focusing using Jest and Enzyme.
                             </div>
                         </div>
                     </div>

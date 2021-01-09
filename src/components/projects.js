@@ -9,7 +9,7 @@ class Projects extends Component {
                     Projects
                 </div>
                 <div className="projects">
-                <div className="projectsContainer">
+                    <div className="projectsContainer">
                         <div className="flip">
                             <div className="front lightOrange">
                                 <div className="text-shadow">React Game</div>
@@ -62,6 +62,25 @@ class Projects extends Component {
                             </div>
                         </div>
                     </div>
+                    <div className="projectsContainer">
+                        <div className="flip">
+                            <div className="front lightOrange">
+                                <div className="text-shadow">Multi Tool Web</div>
+                                <img className="tile" alt='multitool' src={process.env.PUBLIC_URL + '/assets/projects/multi_tool.png'}/>
+                            </div>
+                            <div className="back">
+                                <div className="button" onClick={() => window.open('https://dmoleiro.github.io/multi-tool-web/')}>
+                                    <span>Visit site</span>
+                                    <svg>
+                                        <polyline className="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+                                        <polyline className="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="projects">
                     <div className="projectsContainer">
                         <div className="flip">
                             <div className="front darkOrange">
