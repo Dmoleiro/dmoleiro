@@ -56,6 +56,10 @@
   width: 90%;
   animation: js 1s ease-out;
 }
+.skills .ts {
+  width: 75%;
+  animation: js 1s ease-out;
+}
 .skills .react {
   width: 85%;
   animation: react 1s ease-out;

@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import '../styles/workHistory.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUsers, faFutbol, faBriefcaseMedical, faGraduationCap } from '@fortawesome/free-solid-svg-icons'
+import { faHeartbeat, faUsers, faFutbol, faBriefcaseMedical, faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 
 class WorkHistory extends Component {
     render() {
@@ -11,11 +10,29 @@ class WorkHistory extends Component {
                 <div className="workHistoryTitle">Work History</div>
                 <div className="workHistory">
                     <div className="workHistoryItem">
+                        <div className="workHistoryItemIcon">
+                        <FontAwesomeIcon icon={faHeartbeat} />
+                        </div>
+                        <div className="workHistoryItemDate">
+                            06/21 - present
+                        </div>
+                        <div className="workHistoryItemContent">
+                            <div className="workHistoryItemTitle">
+                                Typescript Developer (React) @lifebit
+                            </div>
+                            <div className="workHistoryItemDescription">
+                                Integrated with a backend / frontend team responsible for developing and maintaning a 
+                                web federated AI-powered platform for streamlined FAIR omics and biomedical analysis.
+                                Key technologies are typescript, react, redux and tests using jest, enzyme and RTL
+                            </div>
+                        </div>
+                    </div>
+                    <div className="workHistoryItem">
                         <div className="workHistoryItemIcon ">
                           <FontAwesomeIcon icon={faUsers} />
                         </div>
                         <div className="workHistoryItemDate">
-                            02/18 - present
+                            02/18 - 06/21
                         </div>
                         <div className="workHistoryItemContent ">
                             <div className="workHistoryItemTitle">

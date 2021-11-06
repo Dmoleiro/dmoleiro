@@ -43,6 +43,7 @@ class SkillBars extends Component {
           <li><span className="html5"></span><em>HTML</em></li>
           <li><span className="css3"></span><em>CSS</em></li>
           <li><span className="js"></span><em>Javascript</em></li>
+          <li><span className="ts"></span><em>Typescript</em></li>
           <li><span className="react"></span><em>React</em></li>
           <li><span className="electron"></span><em>Electron</em></li>
         </ul>
