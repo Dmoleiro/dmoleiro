@@ -88,7 +88,7 @@ class Projects extends Component {
                                 <img className="tile" alt='comingsoon' src={process.env.PUBLIC_URL + '/assets/projects/cpiaa.png'} />
                             </div>
                             <div className="back">
-                                <div className="button" onClick={() => window.open('https://cpiaa.site')}>
+                                <div className="button" onClick={() => window.open('https://dmoleiro.github.io/cpiaa-site')}>
                                     <span>Visit site</span>
                                     <svg>
                                         <polyline className="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
